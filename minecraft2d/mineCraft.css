@@ -1,0 +1,113 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.gameContainer {
+    
+    display: flex;
+    height: 100vh;
+    width: 100vw;
+    margin: 0;
+    padding: 0;
+}
+
+.left-side {
+    display: flex;
+    flex: 5;
+    justify-content: center;
+}
+
+.right-side {
+    /* width: 20%; */
+    background-color: black;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.map {
+    width: 60%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.row {
+    display: flex;
+    height: 10%;
+}
+
+.block {
+    height: 100%;
+    width: 10%;
+    background-color: rgb(134, 240, 240);
+}
+
+.block:hover {
+    border: 1px solid white;
+    /* cursor: pointer;	 */
+}
+img{
+    width: 100%;
+    height: 100%;
+}
+
+.block2 {
+    height: 100%;
+    width: 100px;
+    background-color: brown;
+}
+
+.tool {
+    width: 90px;
+    height: 90px;
+    border: 2px solid grey;
+    background-color: white;
+    border-radius: 12px;
+    margin: 2px;
+}
+
+.tool:hover {
+    cursor: pointer;
+}
+
+.matirial {
+    border: 1px solid white;
+    width: 70px;
+    height: 70px;
+    margin: 5px;
+}
+
+#newGame{
+    position: absolute;
+    left: 20px;
+    top: 20px;
+}
+#newGame:hover {
+    background-color: #4CAF50;
+    color: white;
+    opacity: 1;
+}
+button {
+    width: 100px;
+    height: 60px;
+    font-family: 'Audiowide', cursive;
+    background-color: #4CAF50;
+    border: none;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    font-size: 15px;
+    cursor: pointer;
+    border-radius: 12px;
+    opacity: 0.5;
+}

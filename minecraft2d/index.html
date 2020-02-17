@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link href="https://fonts.googleapis.com/css?family=Audiowide&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="landingPage.css">
+    <link rel="stylesheet" href="instructions.css">
+</head>
+
+<body>
+    <h1>MineCraft</h1>
+    <div id="buttons">
+        <button id="instructions" class="button button1">GAME INSTRUCTIONS</button>
+        <button id="play-button" class="button button2">PLAY</button>
+    </div>
+
+    <!-- instractions -->
+    <div id="container" class="container">
+        <p>
+            Choose your tool from the right menu:
+        </p>
+        <img src="./images/00.png" alt="">
+        <img src="./images/01.png" alt="">
+        <img src="./images/02.png" alt="">
+
+        <p>
+            Each tool can Break other material:
+        </p>
+        <p>
+            1. axe:
+        </p>
+        <img class="main-pic" src="./images/00.png" alt="">
+        <img class="material-pic" src="./images/log.jpg" alt="">
+        <img class="material-pic" src="./images/m2.jpg" alt="">
+
+        <p>
+            2. pickaxe:
+        </p>
+        <img class="main-pic" src="./images/1.png" alt="">
+        <img class="material-pic" src="./images/rocks.jpg" alt="">
+
+        <p>
+            3. shovel:
+        </p>
+        <img class="main-pic" src="./images/2.png" alt="">
+        <img class="material-pic" src="./images/dirt.jpg" alt="">
+        <p>After you broke a material, it will instore in the storage on the right side</p>
+
+        <p>You can Choose any material from your storage, and re-build you map as you want</p>
+
+        <button id="back-button"> BACK</button>
+    </div>
+
+
+    <!-- Container2 section -->
+    <div id="container2" class="container2">
+
+        <A HREF="./mineCraft.html"><button id="levelOne" class="button button1">Level 1</button></A>
+        <A HREF="./bigMap.html"><button id="levelTwo" class="button button2">Level 2</button></A>
+        <button id="back-button2"> BACK</button>
+
+    </div>
+
+
+
+    <script>
+
+
+        instructions = () => {
+
+            document.querySelector("#buttons").style.display = 'none';
+            document.querySelector("#container").style.display = 'block';
+
+        }
+        back = () => {
+
+            document.querySelector("#container").style.display = 'none';
+            document.querySelector("#buttons").style.display = 'block';
+            document.querySelector("#container2").style.display = 'none';
+
+        }
+        play = () => {
+            document.querySelector("#buttons").style.display = 'none';
+            document.querySelector("#container2").style.display = 'block';
+
+        }
+      
+        document.querySelector('#instructions').addEventListener('click', instructions);
+        document.querySelector('#back-button').addEventListener('click', back);
+        document.querySelector('#back-button2').addEventListener('click', back);
+        document.querySelector('#play-button').addEventListener('click', play);
+        document.querySelector('#levelOne').addEventListener('click', level_one);
+
+
+    </script>
+
+
+    <script src="./mineCraft.js"></script>
+
+
+
+</body>
+
+</html>
